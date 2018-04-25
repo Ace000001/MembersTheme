@@ -2,6 +2,9 @@
   background-color: #e4e5e6;
   font-family: "Segoe UI", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
 
+.full-width {
+  width: 100%; }
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -9,10 +12,10 @@
   min-height: 100vh; }
 
 .flex-main {
-  min-height: -webkit-calc(100vh - 51px);
-  min-height: -moz-calc(100vh - 51px);
-  min-height: calc(100vh - 51px);
-  margin-top: 51px; }
+  min-height: -webkit-calc(100vh - 64px);
+  min-height: -moz-calc(100vh - 64px);
+  min-height: calc(100vh - 64px);
+  margin-top: 64px; }
 
 .content-card {
   padding: 4rem;
@@ -113,56 +116,56 @@
   border-radius: 0;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
 
-.members-area-form .btn-sm {
+.btn-sm {
   padding: 5px 15px; }
 
-.members-area-form .btn-primary {
+.btn-primary {
   background-color: #20a8d8; }
 
-.members-area-form .btn-primary:hover {
+.btn-primary:hover {
   background-color: #1b8eb7; }
 
-.members-area-form .btn-primary:focus {
+.btn-primary:focus {
   outline: 0;
   box-shadow: 0 0 0 0.35rem rgba(32, 168, 216, 0.5); }
 
-.members-area-form .btn-danger {
+.btn-danger {
   background-color: #f86c6b; }
 
-.members-area-form .btn-danger:hover {
+.btn-danger:hover {
   background-color: #f64846; }
 
-.members-area-form .btn-danger:focus {
+.btn-danger:focus {
   outline: 0;
   box-shadow: 0 0 0 0.35rem rgba(248, 108, 107, 0.25); }
 
-.members-area-form .btn-warning {
+.btn-warning {
   background-color: #ffc107; }
 
-.members-area-form .btn-warning:hover {
+.btn-warning:hover {
   background-color: #e0a800; }
 
-.members-area-form .btn-warning:focus {
+.btn-warning:focus {
   outline: 0;
   box-shadow: 0 0 0 0.35rem rgba(255, 193, 7, 0.5); }
 
-.members-area-form .btn-info {
+.btn-info {
   background-color: #63c2de; }
 
-.members-area-form .btn-info:hover {
+.btn-info:hover {
   background-color: #43b6d7; }
 
-.members-area-form .btn-info:focus {
+.btn-info:focus {
   outline: 0;
   box-shadow: 0 0 0 0.35rem rgba(99, 194, 222, 0.5); }
 
-.members-area-form .btn-success {
+.btn-success {
   background-color: #4dbd74; }
 
-.members-area-form .btn-success:hover {
+.btn-success:hover {
   background-color: #3ea662; }
 
-.members-area-form .btn-success:focus {
+.btn-success:focus {
   outline: 0;
   box-shadow: 0 0 0 0.35rem rgba(77, 189, 116, 0.25); }
 
@@ -315,6 +318,7 @@
     .members-navbar .navbar-toggle.collapsed .bottom-bar {
       transform: rotate(0); }
   .members-navbar .desc-box {
+    z-index: 1;
     display: none;
     position: absolute;
     top: 100%;
@@ -485,10 +489,93 @@
       color: #007791; } }
 
 /*Nav bar style end*/
-@media (min-width: 768px) {
+/*Intimation card style*/
+.intimation-card {
+  min-height: 128px;
+  color: #fff;
+  margin-bottom: 20px;
+  position: relative; }
+  .intimation-card .card-content,
+  .intimation-card .card-icon {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 12px; }
+  .intimation-card .card-content h3 {
+    margin-top: 0;
+    font-size: 38px; }
+  .intimation-card .card-icon {
+    float: right; }
+  .intimation-card .card-icon i {
+    font-size: 70px;
+    color: #000;
+    opacity: 0.2; }
+  .intimation-card a {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: block;
+    line-height: 22px;
+    text-align: center;
+    height: 27.6px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 3px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+  .intimation-card a:hover,
+  .intimation-card a:active,
+  .intimation-card a:focus {
+    color: #fff;
+    text-decoration: none; }
+  .intimation-card:hover a {
+    height: 100%;
+    line-height: 128px; }
+
+.intimation-card.card-primary {
+  background-color: #20a8d8; }
+
+.intimation-card.card-warning {
+  background-color: #ffc107; }
+
+.intimation-card.card-success {
+  background-color: #4dbd74; }
+
+.intimation-card.card-danger {
+  background-color: #f86c6b; }
+
+.intimation-card.card-info {
+  background-color: #63c2de; }
+
+.intimation-card.card-primary:hover a {
+  background-color: #1b8eb7; }
+
+.intimation-card.card-warning:hover a {
+  background-color: #e0a800; }
+
+.intimation-card.card-success:hover a {
+  background-color: #3ea662; }
+
+.intimation-card.card-danger:hover a {
+  background-color: #f64846; }
+
+.intimation-card.card-info:hover a {
+  background-color: #43b6d7; }
+
+/*Intimation card style end*/
+@media (max-width: 991px) {
   .flex-main {
-    min-height: -webkit-calc(100vh - 64px);
-    min-height: -moz-calc(100vh - 64px);
-    min-height: calc(100vh - 64px);
-    margin-top: 64px; } }
+    min-height: -webkit-calc(100vh - 109px);
+    min-height: -moz-calc(100vh - 109px);
+    min-height: calc(100vh - 109px);
+    margin-top: 109px; } }
+
+@media (max-width: 768px) {
+  .flex-main {
+    min-height: -webkit-calc(100vh - 51px);
+    min-height: -moz-calc(100vh - 51px);
+    min-height: calc(100vh - 51px);
+    margin-top: 51px; } }
 
