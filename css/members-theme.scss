@@ -13,6 +13,7 @@ $success-color-dark: #3ea662;
 $warning-color-dark: #e0a800;
 $danger-color-dark: #f64846;
 $navbar-font-color: #505763;
+$navbar-active-color: #007791;
 $form-width: 570px;
 
 body {
@@ -298,6 +299,7 @@ body {
 /*Nab bar styles*/
 .members-navbar {
     background-color: #fff;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
 
     .navbar-brand {
         display: inline-flex;
@@ -343,6 +345,75 @@ body {
         border-radius: 6px 0 6px 6px;
     }
 
+    .profile-menu {
+        padding: 0;
+    }
+
+    .profile-menu li {
+        list-style: none;
+    }
+
+    .profile-menu li.footer-link {
+        background-color: #f7f8fa;
+    }
+
+    .profile-menu li.footer-link.first {
+        padding-top: 10px;
+    }
+
+    .profile-menu li.footer-link.last {
+        padding-bottom: 10px;
+    }
+
+    .profile-menu li a {
+        padding: 10px 18px;
+        display: block;
+        color: $navbar-font-color;
+    }
+
+    .profile-menu li a i {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 22px 0 8px;
+        color: #686f7a;
+    }
+
+    .profile-menu li a:hover i, .profile-menu li a:active i, .profile-menu li a:focus i {
+        color: #686f7a;
+    }
+
+    .profile-menu li a > .user-initials,
+    .profile-menu li a > .user-name-email {
+        display: inline-block;
+        vertical-align: top;
+        color: $navbar-font-color;
+    }
+
+    .profile-menu li a > .user-initials {
+        padding: 10px;
+        border: 1px solid $navbar-font-color;
+        border-radius: 50%;
+    }
+
+    .profile-menu li a > .user-name-email {
+        margin-left: 10px;
+    }
+
+    .profile-menu li a > .user-name-email span {
+        display: block;
+    }
+
+    .profile-menu li a > .user-name-email span.small-info {
+        color: #686f7a;
+        font-size: 13px;
+    }
+
+    .profile-menu li a:hover, .profile-menu li a:active, .profile-menu li a:focus {
+        background-color: #f3f3f3;
+        color: $navbar-active-color;
+        text-decoration: none;
+    }
+
     ul.nav li > a {
         position: relative;
     }
@@ -359,10 +430,15 @@ body {
     }
 
     .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover,
-    .navbar-nav > .active > a, .navbar-nav > .active > a:focus, .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus, .navbar-nav > .active > a:hover,
     .navbar-nav > .open > a, .navbar-nav > .open > a:focus, .navbar-nav > .open > a:hover {
-        color: #007791;
+        color: $navbar-active-color;
         background-color: #f3f3f3;
+    }
+
+    .navbar-nav > .active > a {
+        color: $navbar-active-color;
+        background-color: transparent;
     }
 
     .navbar-toggle {
@@ -444,6 +520,56 @@ body {
             display: block;
         }
 
+        .dropdown-menu.multi-level-dark {
+            -webkit-box-shadow: 0 6px 12px rgba(41,48,59,.175);
+            background-clip: padding-box;
+            background-color: #29303b;
+            border-radius: 0;
+            box-shadow: 0 6px 12px rgba(41,48,59,.175);
+            color: #fff;
+            font-size: 13px;
+            left: 0;
+            list-style: none;
+            position: fixed;
+            right: -1px;
+            text-align: left;
+            top: auto;
+            width: 100%;
+            margin: 0;
+            padding: 15px 50px 0;
+            min-height: 132px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .dropdown-menu.multi-level-dark li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .dropdown-menu.multi-level-dark li a {
+            color: #fff;
+        }
+
+        .dropdown-menu.multi-level-dark li a:hover, .dropdown-menu.multi-level-dark li a:focus, .dropdown-menu.multi-level-dark li a:active {
+            background-color:transparent;
+        }
+
+        .dropdown-menu.multi-level-dark li i,
+        .dropdown-menu.multi-level-dark li span {
+            display: block;
+        }
+
+        .dropdown-menu.multi-level-dark li i {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .dropdown-menu.multi-level-dark li span {
+            display: block;
+            min-height: 36px;
+        }
+
         #navbar {
             text-align: center;
         }
@@ -457,8 +583,18 @@ body {
         }
 
         .navbar-nav > li > a {
+            margin: 0 2px 10px;
             padding: 12px 15px;
-            margin-bottom: 10px;
+        }
+
+        .navbar-nav > li > a.profile-link,
+        .navbar-nav > li > a.profile-link:focus, .navbar-nav > li > a.profile-link:hover, .navbar-nav > li > a.profile-link:active {
+            margin-bottom: 11px;
+            margin-top: -3px;
+            border: 1px solid $navbar-font-color;
+            padding: 12px;
+            border-radius: 50%;
+            background-color: transparent;
         }
 
         .navbar-nav > li > a:focus, .navbar-nav > li > a:hover {
@@ -501,7 +637,7 @@ body {
         }
 
         .link-desc a {
-            color: #007791;
+            color: $navbar-active-color;
             font-weight: 600;
         }
 
@@ -522,6 +658,7 @@ body {
             left: 0;
         }
 
+        .profile-options::before,
         .multi-level::before,
         .link-desc::before {
             border-color: transparent transparent #e8e9eb;
@@ -535,6 +672,7 @@ body {
             width: 0;
         }
 
+        .profile-options::after,
         .multi-level::after,
         .link-desc::after {
             border-color: transparent transparent #fff;
@@ -548,6 +686,8 @@ body {
             width: 0;
         }
 
+        .profile-options::before,
+        .profile-options::after,
         .desc-right .link-desc::before,
         .desc-right .link-desc::after {
             right: 14px;
@@ -567,9 +707,14 @@ body {
         }
 
         .dropdown-menu {
-            width: 270px;
+            width: 300px;
             min-height: 560px;
             padding: 15px 0;
+        }
+
+        .dropdown-menu.profile-options {
+            min-height: unset;
+            padding-bottom: 0;
         }
 
         .dropdown-menu > li > a {
@@ -584,7 +729,7 @@ body {
         }
 
         .navbar-nav .open .dropdown-menu > li > a:hover {
-            color: #007791;
+            color: $navbar-active-color;
         }
     }
 }
