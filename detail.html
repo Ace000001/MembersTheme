@@ -1,0 +1,636 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="css/members-theme.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="small-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some gibrish lorem ipsum</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="medium-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-default" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some gibrish lorem ipsum</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="large-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg modal-danger" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some gibrish lorem ipsum</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal End-->
+    <nav class="navbar navbar-default navbar-fixed-top members-navbar" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="img-responsive" src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" alt="Udemy" width="110" data-purpose="udemy-brand-logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Udemy for Business</a>
+                        <div class="desc-box desc-right">
+                            <div class="link-desc">
+                                <p>Get your team access to Udemy’s top 2,500 courses anytime, anywhere.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://github.com/fontenele/bootstrap-navbar-dropdowns" target="_blank" class="img-circle"><i class="fas fa-shopping-cart"></i></a>
+                        <div class="desc-box desc-right">
+                            <div class="link-desc">
+                                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle profile-link" data-toggle="dropdown">MK <b class="caret hidden-sm hidden-md hidden-lg"></b></a>
+                        <ul class="dropdown-menu profile-options">
+                            <li class="dropdown-submenu">
+                                <ul class="profile-menu">
+                                    <li>
+                                        <a>
+                                            <div class="user-initials">
+                                                <span>MK</span>
+                                            </div>
+                                            <div class="user-name-email">
+                                                <span>Mubeen Khalid</span>
+                                                <span class="small-info">mubeenkhalid.sa@gmail.com</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a href="#"><i class="fas fa-shopping-cart"></i> link</a></li>
+                                    <li><a href="#"><i class="fas fa-shopping-cart"></i> link</a></li>
+                                    <li class="footer-link first"><a href="#">link</a></li>
+                                    <li class="footer-link last"><a href="#">link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-level">
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown again</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Again Action</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown again and again</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">again and again Action</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Seprated link</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Seprated link Action</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">One more seprated link</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">One more Seprated link Action</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#">Dashboard</a>
+                        <div class="desc-box desc-left">
+                            <div class="link-desc">
+                                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-level-dark">
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Dummy Link</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Anouther Link</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-level-dark">
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fab fa-500px"></i>
+                                    <span>Dummy Link</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container flex-center flex-main">
+        <div class="row full-width">
+            <div class="col-md-6">
+                <div class="card-tile">
+                    <div class="card-header">
+                        <i class="fas fa-bars"></i>
+                        <strong>Basic Table</strong>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Username</th>
+                                        <th>Date registered</th>
+                                        <th>Role</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Yiorgos Avraamu</td>
+                                        <td>2012/01/01</td>
+                                        <td>Member</td>
+                                        <td>
+                                            <span class="badge badge-success">Active</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Avram Tarasios</td>
+                                        <td>2012/02/01</td>
+                                        <td>Staff</td>
+                                        <td>
+                                            <span class="badge badge-danger">Banned</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quintin Ed</td>
+                                        <td>2012/02/01</td>
+                                        <td>Admin</td>
+                                        <td>
+                                            <span class="badge badge-default">Inactive</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Enéas Kwadwo</td>
+                                        <td>2012/03/01</td>
+                                        <td>Member</td>
+                                        <td>
+                                            <span class="badge badge-info">Pending</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Agapetus Tadeáš</td>
+                                        <td>2012/01/21</td>
+                                        <td>Staff</td>
+                                        <td>
+                                            <span class="badge badge-primary">Active</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-tile">
+                    <div class="card-header">
+                        <i class="fas fa-bars"></i>
+                        <strong>Striped Table</strong>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Username</th>
+                                        <th>Date registered</th>
+                                        <th>Role</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Samppa Nori</td>
+                                        <td>2012/01/01</td>
+                                        <td>Member</td>
+                                        <td>
+                                            <span class="badge badge-success">Active</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Estavan Lykos</td>
+                                        <td>2012/02/01</td>
+                                        <td>Staff</td>
+                                        <td>
+                                            <span class="badge badge-danger">Banned</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chetan Mohamed</td>
+                                        <td>2012/02/01</td>
+                                        <td>Admin</td>
+                                        <td>
+                                            <span class="badge badge-default">Inactive</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Derick Maximinus</td>
+                                        <td>2012/03/01</td>
+                                        <td>Member</td>
+                                        <td>
+                                            <span class="badge badge-primary">Pending</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Friderik Dávid</td>
+                                        <td>2012/01/21</td>
+                                        <td>Staff</td>
+                                        <td>
+                                            <span class="badge badge-success">Active</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-6">
+                <div class="card-tile">
+                    <div class="card-header">
+                        <i class="fas fa-bars"></i>
+                        <strong>Small Table</strong>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-condensed table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Username</th>
+                                        <th>Date registered</th>
+                                        <th>Role</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Carwyn Fachtna</td>
+                                        <td>2012/01/01</td>
+                                        <td>Member</td>
+                                        <td>
+                                            <span class="badge badge-success">Active</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nehemiah Tatius</td>
+                                        <td>2012/02/01</td>
+                                        <td>Staff</td>
+                                        <td>
+                                            <span class="badge badge-danger">Banned</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ebbe Gemariah</td>
+                                        <td>2012/02/01</td>
+                                        <td>Admin</td>
+                                        <td>
+                                            <span class="badge badge-default">Inactive</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eustorgios Amulius</td>
+                                        <td>2012/03/01</td>
+                                        <td>Member</td>
+                                        <td>
+                                            <span class="badge badge-warning">Pending</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Leopold Gáspár</td>
+                                        <td>2012/01/21</td>
+                                        <td>Staff</td>
+                                        <td>
+                                            <span class="badge badge-info">Active</span>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="Small Model" data-toggle="modal" data-target="#small-modal"><i class="fas fa-info"></i></a>
+                                            <a href="#" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                            <a href="#" title="Large Model" data-toggle="modal" data-target="#large-modal"><i class="fas fa-window-restore"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-tile">
+                    <div class="card-header">
+                        <i class="fas fa-bars"></i>
+                        <strong>Detail List</strong>
+                    </div>
+                    <div class="card-body">
+                        <ul class="detail-list">
+                            <li>
+                                <img class="img-circle" src="img/1.jpg" />
+                                <div class="desc">
+                                    <div class="title">iMac 4k</div>
+                                    <small>Lorem ipsum dolor sit amet</small>
+                                </div>
+                                <div class="value">
+                                    <div class="small text-muted">Sold this week</div>
+                                    <strong>1.924</strong>
+                                </div>
+                                <div class="actions">
+                                    <a class="text-muted" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="img-circle" src="img/2.jpg" />
+                                <div class="desc">
+                                    <div class="title">Samsung Galaxy Edge</div>
+                                    <small>Lorem ipsum dolor sit amet</small>
+                                </div>
+                                <div class="value">
+                                    <div class="small text-muted">Sold this week</div>
+                                    <strong>1.224</strong>
+                                </div>
+                                <div class="actions">
+                                    <a class="text-muted" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="img-circle" src="img/3.jpg" />
+                                <div class="desc">
+                                    <div class="title">iPhone 6S</div>
+                                    <small>Lorem ipsum dolor sit amet</small>
+                                </div>
+                                <div class="value">
+                                    <div class="small text-muted">Sold this week</div>
+                                    <strong>1.163</strong>
+                                </div>
+                                <div class="actions">
+                                    <a class="text-muted" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="img-circle" src="img/4.jpg" />
+                                <div class="desc">
+                                    <div class="title">Premium accounts</div>
+                                    <small>Lorem ipsum dolor sit amet</small>
+                                </div>
+                                <div class="value">
+                                    <div class="small text-muted">Sold this week</div>
+                                    <strong>928</strong>
+                                </div>
+                                <div class="actions">
+                                    <a class="text-muted" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="img-circle" src="img/5.jpg" />
+                                <div class="desc">
+                                    <div class="title">Spotify Subscriptions</div>
+                                    <small>Lorem ipsum dolor sit amet</small>
+                                </div>
+                                <div class="value">
+                                    <div class="small text-muted">Sold this week</div>
+                                    <strong>893</strong>
+                                </div>
+                                <div class="actions">
+                                    <a class="text-muted" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="img-circle" src="img/6.jpg" />
+                                <div class="desc">
+                                    <div class="title">Ebook</div>
+                                    <small>Lorem ipsum dolor sit amet</small>
+                                </div>
+                                <div class="value">
+                                    <div class="small text-muted">Downloads</div>
+                                    <strong>121.924</strong>
+                                </div>
+                                <div class="actions">
+                                    <a class="text-muted" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="img-circle" src="img/1.jpg" />
+                                <div class="desc">
+                                    <div class="title">Photos</div>
+                                    <small>Lorem ipsum dolor sit amet</small>
+                                </div>
+                                <div class="value">
+                                    <div class="small text-muted">Uploaded</div>
+                                    <strong>12.125</strong>
+                                </div>
+                                <div class="actions">
+                                    <a class="text-muted" title="Medium Model" data-toggle="modal" data-target="#medium-modal"><i class="fas fa-info-circle"></i></a>
+                                </div>
+                            </li>
+                            <li class="divider text-center">
+                                <a class="text-muted more-link" data-toggle="tooltip" data-placement="top" title="show more"><i class="fas fa-ellipsis-h"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            var winWidth = $(window).width();
+            $(window).resize(function () {
+                winWidth = $(window).width();
+            });
+            $('.dropdown-submenu a.dropdown-toggle').on("click", function (e) {
+                if (winWidth <= 768) {
+                    $(this).next('ul').toggle();
+                    e.stopPropagation();
+                    e.preventDefault();
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>

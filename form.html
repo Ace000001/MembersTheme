@@ -10,7 +10,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link href="css/members-theme.min.css" rel="stylesheet" />
+    <link href="css/members-theme.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -160,73 +160,75 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    <div class="container">
-        <div class="flex-center flex-main">
-            <div class="form-card">
-                <form class="members-area-form">
-                    <div class="card-header">
-                        <strong>Members</strong>
-                        <span>Form</span>
-                        <small>
-                            <code>Create</code>
-                        </small>
-                    </div>
-                    <div class="card-body">
+    <div class="container flex-center flex-main">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card-tile no-margin">
+                    <form class="members-area-form">
+                        <div class="card-header">
+                            <strong>Members</strong>
+                            <span>Form</span>
+                            <small>
+                                <code>Create</code>
+                            </small>
+                        </div>
+                        <div class="card-body">
 
-                        <!--<div class="form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon" id="person"><i class="far fa-user"></i></span>
-                                <input type="text" class="form-control" placeholder="Username" aria-describedby="person">
+                            <!--<div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="person"><i class="far fa-user"></i></span>
+                        <input type="text" class="form-control" placeholder="Username" aria-describedby="person">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="lock"><i class="fas fa-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="Password" aria-describedby="lock">
+                    </div>
+                </div>-->
+                            <div class="form-group">
+                                <label for="default-field">Default Field</label>
+                                <input type="password" class="form-control" id="default-field" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="success-field">Password</label>
+                                <input type="password" class="form-control is-valid" id="success-field" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="danger-field">Password</label>
+                                <input type="password" class="form-control is-invalid" id="danger-field" placeholder="Password">
+                                <span class="invalid-feedback">
+                                    Please provide a valid informations.
+                                </span>
+                            </div>
+                            <div class="form-group">
+                                <label for="select-field">Password</label>
+                                <select class="form-control" id="select-field">
+                                    <option value="0">Select an option</option>
+                                    <option value="1">Value 1</option>
+                                    <option value="1">Value 1</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">File input</label>
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Example block-level help text here.</p>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Check me out
+                                </label>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon" id="lock"><i class="fas fa-lock"></i></span>
-                                <input type="password" class="form-control" placeholder="Password" aria-describedby="lock">
-                            </div>
-                        </div>-->
-                        <div class="form-group">
-                            <label for="default-field">Default Field</label>
-                            <input type="password" class="form-control" id="default-field" placeholder="Password">
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Action</button>
+                            <button type="button" class="btn btn-sm btn-danger">Action</button>
+                            <button type="button" class="btn btn-warning">Action</button>
+                            <button type="button" class="btn btn-sm btn-info">Action</button>
+                            <button type="button" class="btn btn-success">Action</button>
                         </div>
-                        <div class="form-group">
-                            <label for="success-field">Password</label>
-                            <input type="password" class="form-control is-valid" id="success-field" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <label for="danger-field">Password</label>
-                            <input type="password" class="form-control is-invalid" id="danger-field" placeholder="Password">
-                            <span class="invalid-feedback">
-                                Please provide a valid informations.
-                            </span>
-                        </div>
-                        <div class="form-group">
-                            <label for="select-field">Password</label>
-                            <select class="form-control" id="select-field">
-                                <option value="0">Select an option</option>
-                                <option value="1">Value 1</option>
-                                <option value="1">Value 1</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputFile">File input</label>
-                            <input type="file" id="exampleInputFile">
-                            <p class="help-block">Example block-level help text here.</p>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Check me out
-                            </label>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Action</button>
-                        <button type="button" class="btn btn-sm btn-danger">Action</button>
-                        <button type="button" class="btn btn-warning">Action</button>
-                        <button type="button" class="btn btn-sm btn-info">Action</button>
-                        <button type="button" class="btn btn-success">Action</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
